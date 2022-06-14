@@ -23,12 +23,30 @@ const ContactsHeader = () => {
                     <div className="row">
                         <div className="col-12 zed">
                             <h1>Мы с нестерпением ждём вас</h1>
+                        </div>
+                        <div className="col-lg-5 zed">
+                            <img src="/image/contacts.png" alt="" />
+                        </div>
+                        <div className="col-lg-7 zed">
+
                             <form onSubmit={sent}>
-                                <input value={name} onChange={(e) => setName(e.target.value)} type="text" name='name' />
-                                <input value={phone_number} onChange={(e) => setPhone_number(e.target.value)} type="text" name='phone_number' />
-                                <input value={message} onChange={(e) => setMessage(e.target.value)} type="text" name='message' />
+                                <div className="d-flex align-items-center w-100 justify-content-between">
+                                    <div className="cards">
+                                        <input placeholder='Имя' className='form-control' value={name} onChange={(e) => setName(e.target.value)} type="text" name='name' />
+                                        <span className='icon icon-form1'>  </span>
+                                    </div>
+                                    <div className="cards ms-3">
+                                        <input placeholder='Номер телефона' className='form-control' value={phone_number} onChange={(e) => setPhone_number(e.target.value)} type="text" name='phone_number' />
+                                        <span className='icon icon-form2'>  </span>
+                                    </div>
+                                </div>
+                                <div className="cards">
+                                    <input placeholder='Коментарии' className='form-control' value={message} onChange={(e) => setMessage(e.target.value)} type="text" name='message' />
+                                    <span className='icon icon-form4'>  </span>
+                                </div>
                                 <button type='submit'>Send </button>
                             </form>
+
                         </div>
                     </div>
                 </div>
