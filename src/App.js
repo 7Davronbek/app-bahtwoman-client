@@ -11,6 +11,7 @@ import Courses from "./pages/Courses";
 import Theme from "./pages/Theme";
 import Contacts from "./pages/Contacts";
 import Social from "./componets/Social";
+import Theme2 from "./componets/Theme2";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/courses" element={<Courses />} />
           <Route path="/theme" element={<Theme />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/theme2" element={<Theme2 />} />
         </Routes>
         <Footer />
       </Router>

@@ -11,11 +11,11 @@ import School from '../componets/School'
 const Main = () => {
   return (
     <>
-    <Header />
-    <About />
-    <School />
-    <Result />
-    <Gallery />
+      <Header />
+      <About />
+      <School />
+      <Result />
+      <Gallery />
     </>
   )
 }
