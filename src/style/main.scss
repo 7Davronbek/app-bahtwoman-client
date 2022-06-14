@@ -37,6 +37,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5c7;
 
     .container {
         max-width: 1400px;
@@ -96,6 +97,31 @@ body {
                 text-decoration: none;
                 margin-right: 20px;
                 margin-left: 20px;
+                user-select: none;
+                position: relative;
+                transition: all .2s ease-in-out;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -13px;
+                    left: 0;
+                    background-color: transparent;
+                    width: 75%;
+                    height: 1px;
+                }
+
+                &:hover {
+                    color: $red;
+                }
+
+                &.active {
+                    color: $red;
+
+                    &::after {
+                        background-color: $red;
+                    }
+                }
             }
 
 
@@ -116,6 +142,7 @@ body {
                 text-decoration: none;
                 margin-right: 20px;
                 margin-left: 20px;
+                user-select: none;
             }
         }
 

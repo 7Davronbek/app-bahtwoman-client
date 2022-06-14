@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false);
+
+    const location = useLocation();
 
     const changeNavbar = () => {
         if (window.scrollY >= 50) {
@@ -23,12 +25,12 @@ const Navbar = () => {
                         <div className="col-2"><img src="/image/logo.svg" alt="" className="w-100" /></div>
                         <div className="col-9 ms-auto d-flex align-content-center justify-content-center ">
                             <div className="nav_box_1">
-                                <Link to='/' className='box_1_a' >Главная</Link>
-                                <Link to='/We' className='box_1_a' href="">О нас</Link>
-                                <Link to='/Courses' className='box_1_a' href="">Темы курсов</Link>
-                                <Link to='/catalog' className='box_1_a' >Курсы</Link>
-                                <a className='box_1_a' href="!#">Контакты</a>
-                                <Link to='/Theme' className='box_1_a' href="">FAQ</Link>
+                                <Link to='/' className={`box_1_a ${location.pathname === '/' ? 'active' : ''}`} >Главная</Link>
+                                <Link to='/we' className={`box_1_a ${location.pathname === '/we' ? 'active' : ''}`} href="">О нас</Link>
+                                <Link to='/courses' className={`box_1_a ${location.pathname === '/courses' ? 'active' : ''}`} href="">Темы курсов</Link>
+                                <Link to='/catalog' className={`box_1_a ${location.pathname === '/catalog' ? 'active' : ''}`} >Курсы</Link>
+                                <Link to='/contacts' className={`box_1_a ${location.pathname === '/contacts' ? 'active' : ''}`} >Контакты</Link>
+                                <Link to='/theme' className={`box_1_a ${location.pathname === '/theme' ? 'active' : ''}`} href="">FAQ</Link>
                             </div>
                             <div className="nav_box_2 ms-auto">
                                 <a className='box_2_a' href="!#">РУ</a>
