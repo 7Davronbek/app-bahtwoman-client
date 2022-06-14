@@ -5,7 +5,7 @@ const Header = () => {
         <><div className="header">
             <div className="container">
                 <div className="row">
-                    <div className="header_h">
+                    <div data-aos='fade-right' className="header_h">
                         Добро пожаловать на Курсы и Марафоны Школы Счастья BahtWoman
                         что в переводе означает «Счастливая Женщина»!
                     </div>

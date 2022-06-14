@@ -12,6 +12,8 @@ import Theme from "./pages/Theme";
 import Contacts from "./pages/Contacts";
 import Social from "./componets/Social";
 import Theme2 from "./componets/Theme2";
+import "aos/dist/aos.css";
+import "aos/dist/aos.js";
 
 const App = () => {
   return (
