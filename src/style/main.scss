@@ -39,6 +39,10 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #e5e5e5c7;
 
+    .zed {
+        z-index: 10;
+    }
+
     .container {
         max-width: 1400px;
     }
@@ -605,6 +609,33 @@ body {
             line-height: 150%;
             color: #41455B;
 
+        }
+    }
+
+    .contactsHeader {
+        background-image: url('../image/contacts.png');
+        position: relative;
+        padding: 75px 0 350px;
+
+        .blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #41455bc9;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-family: "Cormorant SC", sans-serif;
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 64px;
+            text-align: center;
+            color: #FFFFFF;
+            width: 50%;
+            margin: auto;
         }
     }
 }
