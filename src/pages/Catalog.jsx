@@ -1,6 +1,6 @@
 import React from 'react'
-import Catalogname from './Catalogname'
-import Catalogbox from './Catalogbox'
+import Catalogname from '../componets/Catalogname'
+import Catalogbox from '../componets/Catalogbox'
 
 const Catalog = () => {
     return (

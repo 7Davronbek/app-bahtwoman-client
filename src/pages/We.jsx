@@ -1,6 +1,6 @@
 import React from 'react'
-import Webox from './Webox'
-import Weimg from './Weimg'
+import Webox from '../componets/Webox'
+import Weimg from '../componets/Weimg'
 
 const We = () => {
   return (

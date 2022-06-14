@@ -1,5 +1,5 @@
 import React from 'react'
-import Theme1 from './Theme1'
+import Theme1 from '../componets/Theme1'
 
 const Theme = () => {
     return (

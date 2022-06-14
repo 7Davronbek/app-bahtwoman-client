@@ -1,6 +1,6 @@
 import React from 'react'
-import Courseshead from './Courseshead'
-import Coursesbox from './Coursesbox'
+import Courseshead from '../componets/Courseshead'
+import Coursesbox from '../componets/Coursesbox'
 
 const Courses = () => {
     return (

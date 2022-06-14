@@ -1,8 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Pacifico&family=Roboto:wght@300;400;500;700&display=swap');
 
+$pink: #FEB7D1;
+$red: #C12C50;
 
 #root {
     overflow-x: hidden;
+}
+
+html {
+
+    ::selection {
+        background-color: $red;
+        color: #fff;
+    }
+
+    img {
+        user-select: none;
+    }
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #e5e5e5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $red;
+        border-radius: 5px;
+    }
 }
 
 body {
@@ -45,6 +75,9 @@ body {
     .navBar {
         padding-top: 50px;
         padding-bottom: 50px;
+        position: fixed;
+        width: 100%;
+        transition: all .7s ease-in-out;
 
         .nav_box_1 {
             display: flex;
@@ -84,6 +117,10 @@ body {
             }
         }
 
+    }
+
+    .navbarLine {
+        padding-top: 158px;
     }
 
     .header {
