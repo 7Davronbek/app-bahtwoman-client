@@ -24,10 +24,10 @@ const ContactsHeader = () => {
                         <div className="col-12 zed">
                             <h1>Мы с нестерпением ждём вас</h1>
                         </div>
-                        <div className="col-lg-5 zed">
+                        <div className="col-lg-3 zed myCol">
                             <img src="/image/contacts.png" alt="" />
                         </div>
-                        <div className="col-lg-7 zed">
+                        <div className="col-lg-9 zed">
 
                             <form onSubmit={sent}>
                                 <div className="d-flex align-items-center w-100 justify-content-between">
@@ -41,10 +41,10 @@ const ContactsHeader = () => {
                                     </div>
                                 </div>
                                 <div className="cards">
-                                    <input placeholder='Коментарии' className='form-control' value={message} onChange={(e) => setMessage(e.target.value)} type="text" name='message' />
+                                    <textarea placeholder='Коментарии' rows={5} className='form-control' value={message} onChange={(e) => setMessage(e.target.value)} type="text" name='message' />
                                     <span className='icon icon-form4'>  </span>
                                 </div>
-                                <button type='submit'>Send </button>
+                                <button className='myBtn btn' type='submit'>Отправить </button>    
                             </form>
 
                         </div>
