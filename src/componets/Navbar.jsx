@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
+    const [navbar, setNavbar] = useState(false);
+
+    const changeNavbar = () => {
+        if (window.scrollY >= 50) {
+            setNavbar(true);
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavbar);
+
     return (
         <>
-            <div className="navBar">
+            <div className={`navBar ${navbar ? 'active' : ''}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-2"><img src="/image/logo.svg" alt="" className="w-100" /></div>

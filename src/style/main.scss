@@ -77,7 +77,9 @@ body {
         padding-bottom: 50px;
         position: fixed;
         width: 100%;
-        transition: all .7s ease-in-out;
+        transition: all .9s ease-in-out;
+        border-bottom: 1px solid transparent;
+        background-color: transparent;
 
         .nav_box_1 {
             display: flex;
@@ -117,10 +119,19 @@ body {
             }
         }
 
+        &.active {
+            background: #ffffffdb;
+            padding: 20px 0;
+            border-color: #fff;
+            box-shadow: 0 0 10px silver;
+            backdrop-filter: blur(15px);
+            z-index: 999;
+        }
+
     }
 
     .navbarLine {
-        padding-top: 158px;
+        padding-top: 170px;
     }
 
     .header {
@@ -375,6 +386,14 @@ body {
             font-size: 20px;
             line-height: 15px;
             color: #41455B;
+        }
+
+        a {
+            text-decoration: none;
+
+            span {
+                color: $red;
+            }
         }
 
         .footer_3_box {
