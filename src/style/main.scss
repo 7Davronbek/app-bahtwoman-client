@@ -616,6 +616,7 @@ body {
         background-image: url('../image/contacts.png');
         position: relative;
         padding: 75px 0 350px;
+        background-attachment: fixed;
 
         .blur {
             position: absolute;
