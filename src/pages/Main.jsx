@@ -13,8 +13,8 @@ const Main = () => {
 
   useEffect(() => {
     Aos.init({
-      once: true,
-      // duration: 1700,
+      once: false,
+      duration: 1500,
     })
   }, [])
 

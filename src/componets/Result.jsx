@@ -1,18 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
 
 const Result = () => {
+
+    useEffect(() => {
+      Aos.init({
+        once: true,
+        duration: 1700,
+      })
+    }, [])
+
     return (
         <>
             <div className="result">
                 <div className="container">
                     <div className="row">
-                        <div className="result_h">Какие результаты вы получите после прохождения наших Марафонов Счастья?</div>
+                        <div data-aos="zoom-in-up" className="result_h">Какие результаты вы получите после прохождения наших Марафонов Счастья?</div>
                     </div>
                     <div className="row">
                         <div className="col-12">
                             <div className=" result_sec">
                                 <div className="row">
-                                    <div className="col-6 ">
+                                    <div  data-aos="fade-right" className="col-6 ">
                                         <div className="cards">
                                             <img className='result_img' src="/image/result_1.png" alt="" />
                                             <div className="result_box">
@@ -21,7 +30,7 @@ const Result = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-6 ">
+                                    <div data-aos="fade-left" className="col-6 ">
                                         <div className="cards">
                                             <img className='result_img' src="/image/result_2.png" alt="" />
                                             <div className="result_box">
@@ -37,7 +46,7 @@ const Result = () => {
                         <div className="col-12">
                             <div className=" result_sec">
                                 <div className="row">
-                                    <div className="col-6 mt-4">
+                                    <div data-aos="fade-right" className="col-6 mt-4">
                                         <div className="cards">
                                             <img className='result_img' src="/image/result_3.png" alt="" />
                                             <div className="result_box">
@@ -46,7 +55,7 @@ const Result = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-6 mt-4">
+                                    <div data-aos="fade-left" className="col-6 mt-4">
                                         <div className="cards">
                                             <img className='result_img' src="/image/result_4.png" alt="" />
                                             <div className="result_box">
@@ -63,7 +72,7 @@ const Result = () => {
                             <div className=" result_sec">
                                 <div className="row">
                                     <div className="col-12 mt-4">
-                                        <div className="cards">
+                                        <div  data-aos="fade-up" className="cards">
                                             <img className='result_img' src="/image/result_5.png" alt="" />
                                             <div className="result_box">
                                                 <div className="box_num">/05</div>

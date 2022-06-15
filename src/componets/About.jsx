@@ -5,8 +5,8 @@ const About = () => {
         <>  <div className="About">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-4">
-                        <div className="about_h">О нас</div>
+                    <div data-aos="fade-up-right" className="col-lg-4">
+                        <div className="about_h ">О нас</div>
                         <div className="about_p">Конкурентные преимущества наших курсов
                             и марафонов отличаются тем, что они разрабатывались в течении 10-ти лет и максимально были адаптированы под менталитет женщин, проживающих в странах Средней Азии.
                             <span>
@@ -16,12 +16,12 @@ const About = () => {
                         </div>
 
                     </div>
-                    <div className="col-4 ">
+                    <div data-aos="fade-up" className="col-lg-4 ">
                         <div className="about_p">Соответственно, мы даём 100% гарантию, что после прохождения наших курсов, ваша жизнь кардинально измениться к лучшему
                             и вы обязательно станете одной из самых счастливых женщин в мире.
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div data-aos="fade-up-left" className="col-lg-4 text-center">
                         <img src="/image/about.png" alt="" className="about_img" />
                     </div>
                 </div>
